@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кофейня "Аромат" - Лучший кофе в городе</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+<body class="page">
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="#" class="logo">
+                    <div class="logo__icon">
+                        <i class="fas fa-coffee"></i>
+                    </div>
+                    <span class="logo__text">Аромат</span>
+                </a>
+                
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#hero" class="nav__link">Главная</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">О нас</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#menu" class="nav__link">Меню</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contacts" class="nav__link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                
+                <div class="header__contacts">
+                    <a href="tel:+78001234567" class="header__phone">
+                        <i class="fas fa-phone"></i>
+                        +7 (800) 123-45-67
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Герой-секция -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero__content">
+                <h1 class="hero__title">Кофейня "Аромат"</h1>
+                <p class="hero__subtitle">Настоящий кофе с 2010 года</p>
+                <p class="hero__text">Мы обжариваем собственные зерна и готовим каждый напиток с любовью</p>
+                <a href="#menu" class="button hero__button">Посмотреть меню</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция "О нас" -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title about__title">Почему выбирают нас?</h2>
+            
+            <div class="about__content">
+                <div class="about__image">
+                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085" alt="Процесс приготовления кофе" class="about__img">
+                </div>
+                
+                <div class="about__text">
+                    <div class="about__features">
+                        <div class="feature">
+                            <div class="feature__icon">
+                                <i class="fas fa-seedling"></i>
+                            </div>
+                            <h3 class="feature__title">Свежие зерна</h3>
+                            <p class="feature__text">Еженедельная доставка зерен из Эфиопии, Колумбии и Бразилии</p>
+                        </div>
+                        
+                        <div class="feature">
+                            <div class="feature__icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <h3 class="feature__title">Лучшие бариста</h3>
+                            <p class="feature__text">Наши специалисты проходят ежегодное обучение у чемпионов мира</p>
+                        </div>
+                        
+                        <div class="feature">
+                            <div class="feature__icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <h3 class="feature__title">С любовью к делу</h3>
+                            <p class="feature__text">Каждая чашка готовится с вниманием к деталям и заботой о клиенте</p>
+                        </div>
+                    </div>
+                    
+                    <div class="about__stats">
+                        <div class="stat">
+                            <span class="stat__number">13</span>
+                            <span class="stat__text">лет на рынке</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat__number">50+</span>
+                            <span class="stat__text">видов напитков</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat__number">1000+</span>
+                            <span class="stat__text">довольных клиентов</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция "Меню" -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2 class="section-title menu__title">Наше меню</h2>
+            <p class="section-subtitle menu__subtitle">Все напитки готовятся на профессиональном оборудовании</p>
+            
+            <div class="menu__filters">
+                <button class="menu__filter active" data-filter="all">Все</button>
+                <button class="menu__filter" data-filter="coffee">Кофе</button>
+                <button class="menu__filter" data-filter="tea">Чай</button>
+                <button class="menu__filter" data-filter="desserts">Десерты</button>
+            </div>
+            
+            <div class="table-wrapper">
+                <table class="menu-table">
+                    <thead>
+                        <tr>
+                            <th>Напиток</th>
+                            <th>Описание</th>
+                            <th>Объем</th>
+                            <th>Цена</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="menu-item" data-category="coffee">
+                            <td>Эспрессо</td>
+                            <td>Классический крепкий кофе</td>
+                            <td>30 мл</td>
+                            <td>150 ₽</td>
+                        </tr>
+                        <tr class="menu-item" data-category="coffee">
+                            <td>Капучино</td>
+                            <td>Кофе с молочной пенкой</td>
+                            <td>200 мл</td>
+                            <td>250 ₽</td>
+                        </tr>
+                        <tr class="menu-item" data-category="coffee">
+                            <td>Латте</td>
+                            <td>Кофе с большим количеством молока</td>
+                            <td>300 мл</td>
+                            <td>280 ₽</td>
+                        </tr>
+                        <tr class="menu-item" data-category="coffee">
+                            <td>Раф</td>
+                            <td>Кофе со сливками и ванилью</td>
+                            <td>250 мл</td>
+                            <td>300 ₽</td>
+                        </tr>
+                        <tr class="menu-item" data-category="tea">
+                            <td>Чай черный</td>
+                            <td>Листовой чай с бергамотом</td>
+                            <td>300 мл</td>
+                            <td>180 ₽</td>
+                        </tr>
+                        <tr class="menu-item" data-category="tea">
+                            <td>Чай зеленый</td>
+                            <td>Японский сенча с жасмином</td>
+                            <td>300 мл</td>
+                            <td>200 ₽</td>
+                        </tr>
+                        <tr class="menu-item" data-category="desserts">
+                            <td>Тирамису</td>
+                            <td>Итальянский десерт с кофе</td>
+                            <td>150 г</td>
+                            <td>350 ₽</td>
+                        </tr>
+                        <tr class="menu-item" data-category="desserts">
+                            <td>Чизкейк</td>
+                            <td>Нью-йоркский чизкейк</td>
+                            <td>150 г</td>
+                            <td>320 ₽</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="menu__gallery">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd" alt="Кофе латте" class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1561047029-3000c68339ca" alt="Кофе в турке" class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd" alt="Бургер" class="gallery-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция "Контакты" -->
+    <footer id="contacts" class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__info">
+                    <h3 class="footer__title">Кофейня "Аромат"</h3>
+                    <p class="footer__text">Мы открыты для вас каждый день с 8:00 до 22:00</p>
+                    
+                    <div class="footer__contacts">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>г. Москва, ул. Кофейная, д. 15</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+78001234567">+7 (800) 123-45-67</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:info@aromat-coffee.ru">info@aromat-coffee.ru</a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer__social">
+                        <a href="https://vk.com" class="social-link" target="_blank">
+                            <i class="fab fa-vk"></i>
+                        </a>
+                        <a href="https://instagram.com" class="social-link" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://telegram.org" class="social-link" target="_blank">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer__map">
+                    <div class="map-placeholder">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <p>Карта расположения</p>
+                        <p>г. Москва, ул. Кофейная, д. 15</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p class="footer__copyright">© 2023 Кофейня "Аромат". Все права защищены.</p>
+                <a href="#hero" class="footer__back-to-top">
+                    <i class="fas fa-arrow-up"></i>
+                    Наверх
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
